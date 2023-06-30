@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./styles/styles.css" type="text/css"/>
+        <title>Страница</title>
+        
+        
+    </head>
+    <body>
+        <header class="header">
+            <img class="header__logo">
+
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link">Главная</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link">Рецепты</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link">Избранное</a>
+                </li>
+            </ul>
+
+            <div class="authorization">
+                <img class="authorization__img" src="./img/login.svg" alt="svg">
+                <button class="authorization__button">Войти</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="top-block">
+                <h1 class="top-block__text top-block__text--title">Готовь и делись рецептами</h1>
+                <p class="top-block__text">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
+                <div class="top-block__button-wrapper">
+                    <button class="top-block__button " >Добавить рецепт</button>
+                    <button class="top-block__button--transparent">Войти</button>
+                </div>
+            </section>
+
+            <img class="background-img-dish" src="./img/header img.png" alt="png">
+            <!--сортировка блюд-->
+            <section class="sorting-dishes"> 
+                <h2 class="sorting-dishes__title sorting-dishes__title--main">Умная сортировка по тегам</h2>
+                <p class="sorting-dishes__text">Довавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории.</p>
+                <ul class="sorting-dishes__list">
+                    <li class="sorting-dishes__item">
+                        <img class="sorting-dishes__img" src="./img/tag card 1.svg" alt="svg">
+                        <h3 class="sorting-dishes__title sorting-dishes__title--item">Простые блюда</h3>
+                        <p class="sorting-dishes__text">Время приготовления таких блюд не более  1 часа</p>
+                    </li>
+                    <li class="sorting-dishes__item">
+                        <img class="sorting-dishes__img" src="./img/tag card 2.svg" alt="svg">
+                        <h3 class="sorting-dishes__title sorting-dishes__title--item">Детское</h3>
+                        <p class="sorting-dishes__text">Самые полезные блюда которые можно детям любого возраста</p>
+                    </li>
+                    <li class="sorting-dishes__item">
+                        <img class="sorting-dishes__img" src="./img/tag card 3.svg" alt="svg">
+                        <h3 class="sorting-dishes__title sorting-dishes__title--item">От шеф-поваров</h3>
+                        <p class="sorting-dishes__text">Требуют уменя, времени и терпения, зато как в ресторане</p>
+                    </li>
+                    <li class="sorting-dishes__item">
+                        <img class="sorting-dishes__img" src="./img/tag card 4.svg" alt="svg">
+                        <h3 class="sorting-dishes__title sorting-dishes__title--item">На Праздник</h3>
+                        <p class="sorting-dishes__text">Чем удивить гостей, чтобы все были сыты за празничным столом</p>
+                    </li>
+                </ul>
+            </section>
+            
+            <!--рецепт дня-->
+            <section class="recipe-of-the-day"> 
+                <div class="recipe-of-the-day__dish">
+                    <img class="recipe-of-the-day__img" src="./img/recipe of day img.png" alt="png">
+                    <a class="recipe-of-the-day__link">@glazest</a>
+                </div>
+                <div class="recipe-of-the-day__description-dish">
+                    <div class="recipe-of-the-day__brief-information">
+                        <p class="recipe-of-the-day__like">356</p>
+                        <p class="recipe-of-the-day__time">35f минут</p>
+                    </div>
+                    <img class="recipe-of-the-day__logo" src="./img/logo of day.svg" alt="svg">
+                    <h2 class="recipe-of-the-day__title">Тыквенный Супчик На Кокосовом Молоке</h2>
+                    <p class="recipe-of-the-day__text">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост!</p>
+                </div>
+            </section>
+
+            <!--поиск блюд-->
+            <section class="recipe-search"> 
+                <h2 class="recipe-search__title">Поиск рецептов</h2>
+                <p class="recipe-search__text">Введите примерное название блюда, а мы по тегам найдем его</p>
+                <div class="recipe-search__search">
+                    <div class="recipe-search__input-wrapper">
+                        <input class="recipe-search__input" value="Название Блюда..."> 
+                        <button class="recipe-search__button">Поиск</button>
+                    </div>
+                    <ul class="recipe-search__list">
+                        <li class="recipe-search__item">
+                            <a class="recipe-search__item-link">Мясо</a>
+                        </li>
+                        <li class="recipe-search__item">
+                            <a class="recipe-search__item-link">Деликатесы</a>
+                        </li>
+                        <li class="recipe-search__item">
+                            <a class="recipe-search__item-link">Пироги</a>
+                        </li>
+                        <li class="recipe-search__item">
+                            <a class="recipe-search__item-link">Рыба</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+       
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <img class="footer__logo">
+                <p class="footer__copyright"> </p>
+            </div>
+        </footer>
+
+    </body>
+</html>
